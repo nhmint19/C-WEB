@@ -1,0 +1,198 @@
+/* coder default */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width:100%;
+    height: 38px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 120px;
+    height: 38px;
+    border: 1px solid #a0c2ff;
+    border-radius: 5px;
+    background: #4482ff;
+    color: #ffffff;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #c2c2c2;
+}
+
+.btn-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+/*  */
+/* register  */
+.register-container { 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: url("D:/C-WEB/img/register-background.jpg") center center no-repeat;
+    /* height width no-repeat */
+    background-size: cover;
+}
+
+.register-form {
+    width: 500px;
+    background: #ffffff;
+    padding: 70px 50px;
+}
+
+/* login  */
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    background: url("D:/C-WEB/img/login-background.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    background: #ffffff;
+    width: 500px;
+    padding: 70px 50px;
+}
+
+/*  */
+.form-header h3 {
+    text-align: center;
+    padding: 0px;
+    font-size: 32px;
+    color: #788194;
+    margin-bottom: 70px;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-wrapper .input-wrapper {
+    width: calc(50% - 5px);
+}
+
+.form-content .input-wrapper {
+    margin-bottom: 10px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-error {
+    color: #ff0000;
+    padding-bottom: 10px;
+}
+
+.message-success {
+    color: #00ff00;
+    padding-bottom: 10px;
+}
+
+/* chat */
+.main-nav {
+    height: 38px;
+    background: #4482ff;
+    color: #ffffff;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    height : 100%;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.chat-container {
+    height: calc(100vh - 38px);
+}
+
+.current-conversation {
+    height: 100%;
+}
+
+.list-messages {
+    height: calc(100% - 38px);
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.list-messages>* {
+    margin-bottom: 10px;
+}
+
+.form-chat {
+    height: 38px;
+}
+
+.message-chat span {
+    display: inline-block;
+    /* display: inline ---> cho hai element cung dong 
+                block ----> cho hai element khac dong
+        tuy nhien inline ko the tang chieu cao va rong cua span
+        -------> dung inline-block;    
+    */
+    border: 1px solid #4482ff;
+    border-radius: 5px;
+    color: #4482ff;
+    padding: 10px;
+    max-width: 50%;
+    word-break: break-word;
+    /* cat chu neu qua dai */
+}
+
+.your {
+    text-align: right;
+}
+
+.form-chat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-chat .input-wrapper {
+    width: calc(100% - 120px);
+}
+
+.chat-user-indicator {
+    display: none;
+}
+/* loading */
+.loading-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
