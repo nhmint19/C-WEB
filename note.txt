@@ -1,5 +1,6 @@
 1. ý tưởng -----------------------------------------------------------------> sản phẩm
             research     design       code          testing       marketing 
-
-
+                |           |           |
+                |           |           |
+                v           v           v
             features     screens      product         
