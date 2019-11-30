@@ -136,10 +136,38 @@ button:disabled {
 
 .chat-container {
     height: calc(100vh - 38px);
+    display: flex;
+}
+
+.aside-left {
+    width: 15%;
 }
 
 .current-conversation {
+    width: 70%;
     height: 100%;
+}
+
+.aside-right {
+    width: 15%;
+    padding: 10px;
+}
+
+.user-email {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.created-at {
+    font-size: 10px;
+    text-align: right;
+    font-style: italic;
+}
+
+.aside-right .btn-icon {
+    margin-top: 10px;
 }
 
 .list-messages {
@@ -176,6 +204,11 @@ button:disabled {
     text-align: right;
 }
 
+.your span {
+    color: #ffffff;
+    background: #4482ff;
+}
+
 .form-chat {
     display: flex;
     justify-content: space-between;
@@ -186,7 +219,49 @@ button:disabled {
 }
 
 .chat-user-indicator {
-    display: none;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+.list-conversations {
+    max-height: 60%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.conversation {
+    margin-bottom: 10px;
+}
+
+.conversation:hover {
+    cursor: pointer;
+}
+
+.current {
+    background: #d2d2d2;
+}
+
+.conversation .conversation-title {
+    font-weight: 700;
+
+    /* combo */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* lam cho chu tren mot dong va de an phan cuoi, thay bang dau ... */
+}
+
+.conversation .conversation-members {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.form-add-conversation {
+    padding: 10px;
+}
+
+.form-add-conversation>* {
+    margin-bottom: 10px;
 }
 /* loading */
 .loading-container {
